@@ -67,7 +67,7 @@ void SendMessage()
 {
   gsm.println("AT+CMGF=1");
   delay(1000);
-  gsm.println("AT+CMGS=\"+919445886543\"\r");
+  gsm.println("AT+CMGS=\"+91************\"\r");
   delay(1000);
   gsm.print("https://www.google.com/maps/?q=");
   gsm.print(gpslat, 6);
@@ -80,6 +80,6 @@ void SendMessage()
 
 void MakeCall()
 {
-  gsm.println("ATD+919445886543;");
+  gsm.println("ATD+91***********");
   delay(1000);
 }
